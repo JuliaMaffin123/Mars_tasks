@@ -59,7 +59,7 @@ def show_choice(planet_name):
     else:
         text1 = 'Извините, информация засекречена.'
         text2 = 'Что вы знаете об этой планете?'
-        text3 = 'Стиратель памети активируется через...'
+        text3 = 'Стиратель памяти активируется через...'
         text4 = '3... 2... 1...'
         text5 = 'Пып'
     return render_template('planets.html', planet_name=planet_name, text1=text1, text2=text2,
