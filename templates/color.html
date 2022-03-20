@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="my_template">
+    <div id="my-head-center">
+        <h3>Оформление каюты</h3>
+    </div>
+    <body>
+        <table class="table">
+      <thead>
+        <tr class="table-secondary">
+          <th scope="col" width="50%">Цвет стен</th>
+          <th scope="col" width="50%">Эмблема</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          {% if age < 21 %}
+            {% if m_or_f == 'female' %}
+                <td class="light-red"></td>
+            {% elif m_or_f == 'male' %}
+                <td class="light-blue"></td>
+            {% endif %}
+          {% else %}
+            {% if m_or_f == 'female' %}
+                <td class="red"></td>
+            {% elif m_or_f == 'male' %}
+                <td class="blue"></td>
+            {% endif %}
+          {% endif %}
+          <td>
+              {% if age < 21 %}
+                <img width="100%" src="/static/img/small_m.png">
+              {% else %}
+                <img width="100%" src="/static/img/big_m.png">
+              {% endif %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </body>
+</div>
+{% endblock %}
