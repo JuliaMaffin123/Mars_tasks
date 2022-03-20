@@ -1,6 +1,15 @@
 h4 {
    color: #cdd2db
 }
-div {
-   padding: 0px 0px 0px 20px
+#my_template {
+    padding: 20px;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    height: 40px;
+}
+.clear {
+    clear: both;
 }
