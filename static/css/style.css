@@ -13,3 +13,6 @@ h4 {
 .clear {
     clear: both;
 }
+#my-head {
+    padding-left: 40px
+}

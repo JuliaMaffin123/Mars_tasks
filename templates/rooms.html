@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="my_template">
+    <div id="my-head">
+        <h3>Размещение по каютам</h3>
+    </div>
+    <body>
+        {% set room = 'Каюта №' %}
+        {% for astronaut in lst %}
+            <div>{{ astronaut }} - {{ room }} {{ loop.index }} {% if loop.first %} - капитан корабля {% endif %}</div>
+        {% endfor %}
+    </body>
+</div>
+{% endblock %}
